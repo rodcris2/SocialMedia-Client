@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, {useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import PublicTopbar from '../../components/publicTopbar/PublicTopbar';
+import { PublicTopbar } from '../../components/publicTopbar/PublicTopbar';
 
 export const ActivationEmail = () => {
     const {activation_token} = useParams();

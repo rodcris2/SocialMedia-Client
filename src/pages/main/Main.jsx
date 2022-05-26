@@ -1,10 +1,11 @@
 import React from 'react';
-import PublicTopbar from '../../components/publicTopbar/PublicTopbar';
+import { PublicTopbar } from '../../components/publicTopbar/PublicTopbar';
 
-export const Main = () => {
+const Main = () => {
     return (
         <div>
             <PublicTopbar/>
         </div>
     )
-}
+};
+export default Main;

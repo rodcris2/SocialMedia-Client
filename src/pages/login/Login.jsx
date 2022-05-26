@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react';
-import Loader from './Loader';
+import { Loader } from './Loader';
 import { login } from '../../utils/userApiCalls';
 import { AuthContext } from '../../context/AuthContext';
-import PublicTopbar from '../../components/publicTopbar/PublicTopbar';
+import { PublicTopbar } from '../../components/publicTopbar/PublicTopbar';
 
 export const Login = () => {
     const[email, setEmail] = useState("");
