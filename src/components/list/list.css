@@ -1,0 +1,73 @@
+/* Home List podcast boxes */
+.list{
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.listTitle{
+    display: flex;
+    text-align: right;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 10px 50px;
+}
+
+.listWrapper{
+    position: relative;
+}
+
+.listWrapper .sliderArrow{
+    width: 45px;
+    height: 200px;
+    background-color: black;
+    border: none;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    color: red;
+}
+
+.sliderArrow.left:hover{
+    color: blue;
+}
+
+.sliderArrow.right:hover{
+    color: blue;
+}
+
+.listWrapper .sliderArrow span{
+    height: 200px;
+    width: 1px;
+    font-size: 32px;
+    font-weight: 1000;
+}
+
+.sliderArrow.left{
+    left: 0;
+}
+
+.sliderArrow.right{
+    right: 0;
+}
+
+.listContainer{
+    display: flex;
+    width: max-content;
+    transform: translateX(0px);
+    padding: 10px 30px;
+    /* transition: all 1s ease; */
+}
+
+@media (max-width: 739px){
+    .listTitle{
+        font-size: 20px;
+    }
+
+    .listWrapper .sliderArrow span{
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,45 @@
+.addTableRow{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.addTableItem{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.addTableItem > label {
+    color: gray;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.addTableItem > input{
+    padding: 10px;
+}
+
+.addTableItem > select {
+    padding: 10px;
+}
+
+.addTableItem input{
+    font-size: 700;
+    color: rgb(68, 68, 68);
+}
+
+.addTableButton{
+    height: 30px;
+    margin-top: 10px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: center;
+}

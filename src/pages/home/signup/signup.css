@@ -1,0 +1,381 @@
+.singup{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.basicLayout.simplicity{
+    min-height: 100vh;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+
+/* TOP */
+div.basicLayout .signup-nfHeader{
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+
+.signup-nfHeader.signupBasicHeader{
+    height: 90px;
+}
+
+.noBorderHeader{
+    position: relative;
+}
+
+.nfLogo.signupBasicHeader{
+    margin-left: 3%;
+}
+
+.nfLogo{
+    text-decoration: none;
+    vertical-align: middle;
+    fill: blue;
+    display: inline-block;
+}
+
+a{
+    background-color: transparent;
+    text-decoration: none;
+    color: #0080ff;
+}
+
+.nfLogo .signup-logo{
+    width: 167px;
+    vertical-align: middle;
+}
+
+.signup-logo{
+    font-size: 24px;
+    font-weight: 800;
+    user-select: none;
+}
+
+
+.signup .authLinks.signupBasicHeader{
+    margin: 0 3%;
+}
+
+.authLinks{
+    float: right;
+    color: #333;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 90px;
+}
+
+/* BODY */
+#root .simpleContainer{
+    padding-bottom: 95px;
+}
+
+.basicLayout.simplicity .simpleContainer{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+div.basicLayout .simpleContainer{
+    background-color: #fff;
+}
+
+.simpleContainer{
+    width: 100%;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+div.basicLayout .centerContainer{
+    --layout-container-side-padding: 32px;
+    padding: 20px var(--layout-container-side-padding) 60px;
+}
+
+.centerContainer{
+    overflow: hidden;
+    margin: 0 auto 15px;
+    max-width: 978px;
+    box-sizing: border-box;
+}
+
+form{
+    display: block;
+    margin-top: 0em;
+}
+
+.regFormContainer{
+    text-align: left;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+div.basicLayout.hasLargeTypography .contextRow, 
+div.basicLayout.hasLargeTypography .regFormContainer .contextRow{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+div.basicLayout.hasLargeTypography
+.regFormContainer .contextRow+.contextRow{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+div.basicLayout.hasLargeTypography .contextRow,
+div.basicLayout.hasLargeTypography .regFormContainer .contextRow{
+    margin-bottom: 0;
+}
+
+.contextRow{
+    color: black;
+}
+
+.regFormContainer .simpleForm{
+    margin: 10px 0 20px;
+}
+
+.regFormContainer .stepHeader{
+    margin-top: 20px;
+}
+
+.stepHeader{
+    display: inline-block;
+}
+
+div.basicLayout.hasLargeTypography h1{
+    font-size: 32px;
+}
+
+.stepTitle{
+    display: inline-block;
+    font-weight: 700;
+    color: black;
+}
+
+h1{
+    margin: 0 0 0.4em;
+}
+
+
+ul.structural{
+    padding: 0;
+}
+
+.ui-grid{
+    box-sizing: border-box;
+}
+
+ul.structural>li{
+    list-style: none;
+    margin-left: 0;
+}
+
+.nfFormSpace{
+    margin-bottom: 10px;
+}
+
+.nfInput{
+    max-width: 500px;
+    position: relative;
+}
+
+.nfInput .nfInputPlacement{
+    position: relative;
+}
+
+.nfInput.nfInputOversize .nfTextField{
+    height: 60px;
+}
+
+.nfInput .nfTextField{
+    padding: 10px 10px 0;
+    width: 100%;
+}
+
+.nfTextField{
+    box-sizing: border-box;
+    font-size: 16px;
+    border: solid 1px #8c8c8c;
+    border-radius: 2px;
+    display: block;
+    appearance: none;
+}
+
+.nfTextField::placeholder{
+    color: transparent;
+}
+
+.nfTextField:focus + .placeLabel,
+.nfTextField:not(:placeholder-shown) + .placeLabel
+{
+    transform: translateY(-100%) scale(.8);
+}
+
+input{
+    line-height: normal;
+    font: inherit;
+    margin: 0;
+}
+
+.nfInput .placeLabel{
+    font-size: 16px;
+}
+
+.nfInput .placeLabel{
+    position: absolute;
+    top: 50%;
+    color: #8c8c8c;
+    transform-origin: 0 0;
+    transition: all .2s ease;
+    transform: translateY(-50%);
+}
+
+.regFormContainer .inputError{
+    color: #b92d2b;
+    font-weight: 600;
+    text-align: left;
+    padding: 6px 3px;
+    font-size: 18px;
+}
+
+.simpleContainer .submitBtnContainer{
+    margin-top: 24px;
+}
+
+.submitBtnContainer{
+    text-align: center;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+div.basicLayout.hasLargeTypography button.nf-btn-primary{
+    min-height: 64px;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 4px;
+}
+
+div.basicLayout .nf-btn-primary{
+    line-height: 1;
+}
+
+.nf-btn.nf-btn-oversize{
+    padding: 0.75rem 25.3333px;
+    min-width: 110px;
+    width: 100%;
+}
+
+.nf-btn-solid.nf-btn-primary{
+    color: #fff;
+    background-color: blue;
+}
+
+.nf-btn-solid.nf-btn-primary:hover{
+    background-color: rgb(27, 97, 248);
+}
+
+.nf-btn{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    letter-spacing: .025rem;
+    user-select: none;
+    text-align: center;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 25%);
+}
+
+button{
+    -webkit-appearance: button;
+    text-transform: none;
+    overflow: visible;
+    font: inherit;
+    margin: 0;
+}
+
+/* BOTTOM */
+.signup-footer-wrapper{
+    margin-top: 0;
+    background-color: #f3f3f3;
+    min-width: 190px;
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 1em;
+    color: #757575;
+    position: relative;
+  }
+  
+    .signup-footer-divider{
+      height: 0;
+      width: 100%;
+      border-top: 1px solid #e5e5e5;
+    }
+  
+      .signup-site-footer{
+        margin: 0 auto;
+        padding-top: 30px;
+        width: 90%;
+      }
+  
+        .signup-footer-top{
+          padding: 0;
+          margin: 0 0 30px;
+        }
+
+        .signup-footer-top-a{
+            color: #757575;
+        }
+  
+        ul.structural{
+          padding: 0;
+          margin: 0;
+        }
+  
+        .signup-footer-links{
+          max-width: 1000px;
+          font-size: 13px;
+          box-sizing: border-box;
+        }
+  
+        ul.structural>li{
+          list-style: none;
+          margin-left: 0;
+        }
+  
+          .signup-footer-link-item{
+            box-sizing: border-box;
+            padding: 0;
+            margin-bottom: 16px;
+            display: inline-block;
+            min-width: 100px;
+            width: 25%;
+            padding-right: 12px;
+            vertical-align: top;
+          }
+  
+          ul>li{
+            margin-left: 1.1em;
+            margin-bottom: 5px;
+            list-style-type: disc;
+          }
+  
+          li{
+            display: list-item;
+            text-align: -webkit-match-parent;
+          }
+  
+            .signup-footer-link{
+              color: #757575;
+            }
+  
+            .signup-footer-link a:hover{
+              text-decoration: underline;
+            }
+
+            .signup-footer-wrapper a:hover{
+                text-decoration: underline;
+            } 

@@ -1,0 +1,614 @@
+.register {
+  background-color: #000;
+}
+
+/* Top */
+
+/* Register Container */
+.header-wrap{
+  height: 10%;
+  background-color: transparent;
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+  .header-wrap .header{
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    align-items: flex-start;
+    padding-top: 0.5rem;
+    height: auto;
+    position: relative;
+    margin: 0 3.5rem;
+  }
+
+    .header-logo{
+      margin-right: auto;
+      fill: blue;
+      line-height: normal;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+      .logo{
+        font-size: 24px;
+        color: blue;
+        font-weight: 800;
+        user-select: none;
+      }
+    
+    .sign-in-button{
+      display: flex;
+      align-items: center;
+      height: auto;
+    }
+
+    .sign-in-blue-button{
+      float: none;
+      margin-top: 0;
+      white-space: nowrap;
+      background-color: blue;
+      line-height: normal;
+      padding: 7px 17px;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #fff;
+      border-radius: 3px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+/* Middle */
+.register-containers{
+  margin: 0 auto;
+}
+
+.containers{
+  padding: 70px 45px;
+  position: relative;
+  border-bottom: 8px solid #222;
+  margin-bottom: 0;
+  background: 0 0;
+  color: #fff;
+}
+
+  .register-top-background{
+    z-index: 0;
+    position: absolute;
+    top: -110px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+    .register-top-image{
+      bottom: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+
+    .register-img{
+      transform: none;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0px -500px;
+      max-width: 100%;
+      border: 0;
+    }
+
+    img{
+      max-width: 100%;
+      height: auto;
+      border: 0;
+    }
+
+.register-top-text{
+  position: relative;
+  width: 100%;
+  padding: 75px 0;
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+  .register-text-title{
+    font-size: 3.125rem;
+    line-height: 1.1;
+  }
+  
+  .register-top-text h1, .register-top-text h2{
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  h1{
+    font-weight: 700;
+    color: #fff;
+  }
+
+    .register-containers .register-text-subtitle{
+      font-size: 1.625rem;
+      margin: 1rem auto;
+      font-weight: 400;
+    }
+
+  .form-email-form{
+    max-width: 950px;
+    padding-right: 0px;
+    padding-top: 0.85rem;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-top: 0em;
+  }
+
+    .email-form-title{
+      max-width: none;
+      font-size: 1.2rem;
+      padding: 0 5%;
+      padding-bottom: 20px;
+      margin: 0 auto;
+      font-weight: 400;
+    }
+
+    h3{
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+
+      .email-form{
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+        .simpleForm{
+          vertical-align: top;
+          -webkit-box-flex: 1;
+          flex: 1 0 auto;
+          text-align: right;
+          margin: 0;
+        }
+
+        ul{
+          display: block;
+          list-style-type: disc;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          padding-inline-start: 40px;
+          padding: 0;
+          margin: 0;
+        }
+
+          .field-email{
+            margin-bottom: 10px;
+            list-style: none;
+            margin-left: 0;
+          }
+
+          li{
+            display: list-item;
+          }
+
+            .input-email{
+              margin: 0;
+              display: inline-block;
+              max-width: 500px;
+              position: relative;
+            }
+
+              .input-placement{
+                position: relative;
+              }
+
+              .register .input-placement input{
+                min-width: 450px;
+                height: 60px!important;
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+              }
+
+                  .register .textField{
+                    padding: 10px 10px 0;
+                    width: 100%;
+                    box-sizing: border-box;
+                    font-size: 16px;
+                    border: solid 1px #8c8c8c;
+                    border-radius: 2px;
+                    display: block;
+                    appearance: none;
+                    color: #000;
+                  }
+
+                  .textField::placeholder{
+                    color: transparent;
+                  }
+
+                  .textField:focus + .placeLabel,
+                  .textField:not(:placeholder-shown) + .placeLabel
+                  {
+                    transform: translateY(-100%) scale(.8);
+                  }
+
+                  .placeLabel{
+                    pointer-events: none;
+                    cursor: text;
+                    font-size: 16px;
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    color: #8c8c8c;
+                    transform-origin: 0 0;
+                    transition: all .2s ease;
+                    transform: translateY(-50%);
+                  }
+
+              .email-form .inputError{
+                color: rgb(251, 255, 0);
+                font-weight: 600;
+                text-align: left;
+                margin-bottom: 6px;
+                padding: 6px 3px;
+                font-size: 18px;
+              }
+
+        .email-form-button-container{
+          float: none;
+          display: inline-block;
+          vertical-align: top;
+          text-align: left;
+          -webkit-box-flex: 1;
+          flex: 1 0 auto;
+        }
+
+          .register .blue-button{
+            margin: 0!important;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            border-left: 1px solid #333;
+            font-size: 1.625rem;
+            min-height: 60px;
+            padding: 0 1em;
+            display: inline-flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-direction: row;
+            -webkit-box-align: center;
+            align-items: center;
+            line-height: initial;
+            width: auto;
+            color: #fff;
+            background-color: blue;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            font-weight: 400;
+            letter-spacing: .1px;
+            border-radius: 2px;
+            user-select: none;
+            text-align: center;
+            box-sizing: border-box;
+            border: 0;
+          }
+
+          button{
+            cursor: pointer;
+          }
+
+  .center-pixel{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+  }
+
+/* Other Containers */
+
+.register-container{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+  .register-container-text{
+    margin: -5% 0;
+    width: 52%;
+    height: 100%;
+    -webkit-box-flex: 0;
+    padding: 0 3rem 0 0;
+    flex: 0 1 auto;
+    z-index: 3;
+    font-size: 1.625rem;
+    font-weight: 400;
+  }
+
+  .register-container-img-container{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    box-sizing: border-box;
+  }
+
+    .register-container-img-animation{
+      margin: -10% -5% -5% 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .register-container-img{
+      position: relative;
+      z-index: 2;
+    }
+
+    .register-container-animation{
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+      top: 46%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+      .register-container-animation img{
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: baseline;
+        object-fit: contain;
+      }
+
+/* FAQ Container */
+.register-faq-container{
+  text-align: center;
+}
+
+.register-faq-container-text{
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+  .register-faq-container-text h1{
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+
+  .faq-list{
+    width: 75%;
+    margin: 2em auto;
+    max-width: 815px;
+  }
+
+    .faq-list-item{
+      list-style-type: none;
+      margin: 0 0 8px 0;
+    }
+
+      .faq-answer, .faq-question-button{
+        display: block;
+        text-align: left;
+        background: #303030;
+      }
+
+      .faq-question-button{
+        padding: 0.8em 2.2em 0.8em 1.2em;
+        margin-bottom: 1px;
+        font-weight: 400;
+        position: relative;
+        width: 100%;
+        border: 0;
+        overflow: visible;
+        color: inherit;
+        font: inherit;
+      }
+      
+      .faq-answer{
+        overflow: hidden;
+      }
+
+      .faq-answer.closed{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .25s cubic-bezier(.5,0,.1,1);
+      }
+
+      .faq-answer.open{
+        max-height: 1200px;
+        transition: max-height .25s cubic-bezier(.5,0,.1,1);
+      }
+
+        .faq-list-item span{
+          display: inline-block;
+          padding: 1.2em;
+        }
+
+    .containers.register-faq-container .form-email-form{
+      margin: 0 auto;
+    }
+
+
+/* Bottom */
+.containers.register-container-no-border{
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.register-footer-container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.register-footer-wrapper{
+  margin-top: 0;
+  min-width: 190px;
+  width: 100%;
+  padding-bottom: 20px;
+  font-size: 1em;
+  color: #757575;
+  position: relative;
+}
+
+.footer-divider{
+  display: none;
+  height: 0;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+}
+
+.site-footer{
+  padding-top: 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.footer-top{
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.footer-top-a{
+  color: #757575;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+ul.structural{
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links{
+  max-width: 1000px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+ul.structural>li {
+  list-style: none;
+  margin-left: 0;
+}
+
+ul>li {
+  margin-left: 1.1em;
+  margin-bottom: 5px;
+  list-style-type: top;
+}
+
+.footer-link-item{
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 16px;
+  display: inline-block;
+  min-width: 100px;
+  width: 25%;
+  padding-right: 12px;
+  vertical-align: top;
+}
+
+.footer-link{
+  color: #757575;
+  text-decoration: none;
+}
+
+.site-footer a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 949px){
+  /* TOP */
+  .email-form-title{
+    font-size: 23px;
+  }
+
+  .email-form{
+    text-align: center;
+    display: block;
+    margin: 0;
+  }
+
+  .email-form-button-container{
+    justify-content: center;
+  }
+
+  .simpleForm{
+    text-align: center;
+    flex: none;
+    vertical-align: 0;
+  }
+
+  /* MIDDLE */
+  .register-container{
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .register-container-text{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .register-container-img-container{
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1em;
+  }
+
+  .register-container-img-animation{
+    margin: -10% 0 0 0;
+  }
+}
+
+@media (max-width: 600px){
+  .header-wrap .header{
+    margin: 0 20px;
+  }
+  
+  .register .input-placement input{
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 400px){
+  .register .input-placement input{
+    min-width: 100px;
+  }
+}

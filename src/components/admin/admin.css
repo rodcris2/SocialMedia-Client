@@ -1,0 +1,83 @@
+.admin{
+    position: relative;
+    background-color: black;
+}
+
+.adminHeader{
+    position: relative;
+    margin-top: 149px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: black;
+}
+
+.adminListTitle{
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+}
+
+.adminButtons{
+    display: flex;
+    align-items: center;
+}
+
+.adminButton{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+}
+
+.adminBody{
+    padding: 50px;
+}
+
+.adminBodyContent{
+    color: black;
+    overflow-x: auto;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    font-size: 21px;
+    background-color: rgb(117, 201, 250);
+}
+
+td{
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    font-size: 21px;
+    background-color: rgb(205, 235, 253);
+}
+
+h2{
+    color: white;
+}
+
+/* form {
+    display: flex;
+    gap: 5px;
+}
+
+form td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+form * {
+    font-size: 28px;
+} */

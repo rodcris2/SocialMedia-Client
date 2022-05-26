@@ -1,0 +1,347 @@
+@media (min-width: 739px){
+    #root>div .loginhelp-login-wrapper{
+        background-image: url("https://cdn.myportfolio.com/835253951cfacdcbc62e7b0663b37a5d/abab8936-bfcb-4a42-aa49-a4ab25db03d2_rw_1920.jpg?h=2fd3dfd638671f872f1deb065ddfe878");
+        background-size: cover;
+    }
+}
+
+/* loginhelp top */
+@media (min-width: 739px){
+    .nfHeader.loginhelp.login-header.login-header{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border-bottom: transparent;
+        background: linear-gradient(to bottom, rgba(0,0,0,.5), 0, rgba(0,0,0,0), 100%);
+    }
+}
+
+.nfHeader.signupBasicHeader{
+    height: 90px;
+}
+
+.nfHeader{
+    background-color: #fafafa;
+    border-bottom: solid 1px #dcdde0;
+    height: 90px;
+    z-index: 2;
+}
+
+.nfLogo.signupBasicHeader{
+    margin-left: 3%;
+}
+
+.nfLogo{
+    text-decoration: none;
+    vertical-align: middle;
+    fill: blue;
+    display: inline-block;
+}
+
+a{
+    background-color: transparent;
+    text-decoration: none;
+    color: #0080ff;
+}
+
+.nfLogo .login-logo{
+    width: 167px;
+    vertical-align: middle;
+}
+
+.login-logo{
+    font-size: 24px;
+    font-weight: 800;
+    user-select: none;
+}
+
+.loginhelp .authLinks.signupBasicHeader{
+    margin: 0 3%;
+    color: blue;
+}
+
+.loginhelp .authLinks{
+    float: right;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 90px;
+}
+
+.authLinks:hover{
+    text-decoration: underline;
+}
+
+
+/* loginhelp middle */
+@media (min-width: 739px){
+    .loginhelp.login-body{
+        margin: 0 auto -236px;
+        min-height: 100vh;
+        background-color: transparent;
+        max-width: 450px;
+        color: #333;
+        padding: 0 5%;
+    }
+}
+
+@media (min-width: 739px){
+    .loginhelp.login-body::before{
+        content: "";
+        height: 91px;
+        display: block;
+    }
+}
+
+@media (min-width: 739px){
+    .loginhelp.login-body::after{
+        content: "";
+        height: 236px;
+        display: block;
+    }
+}
+
+@media (min-width: 739px){
+    .login-content{
+        min-width: 380px;
+        min-height: 393px;
+        padding: 40px;
+        background-color: #f3f3f3;
+    }
+}
+
+.loginhelp h1{
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 2em;
+    color: #333;
+    font-weight: 400;
+}
+
+.contact-method-input{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.ui-input-label{
+    position: relative;
+}
+
+.ui-label{
+    font-size: 1em;
+    font-weight: 400;
+    color: grey;
+    display: block;
+}
+
+label{
+    cursor: default;
+}
+
+.contact-method-input .ui-text-input{
+    width: 100%;
+    max-width: none;
+}
+
+.ui-text-input{
+    box-sizing: border-box;
+    font-size: 16px;
+    border: solid 1px #b3b3b3;
+    border-radius: 2px;
+    display: block;
+    appearance: none;
+    color: #000;
+    padding: 10px 11px;
+    height: 44px;
+}
+
+input{
+    line-height: normal;
+}
+
+.forgot-password-button.btn-large{
+    width: 100%;
+}
+
+.btn.btn-large{
+    font-size: 20px;
+    padding: 14px 2em;
+    min-width: 112px;
+    min-height: 48px;
+}
+
+.btn-blue{
+    color: #fff;
+    background-color: #0080ff;
+    background-image: linear-gradient(to bottom, #0080ff, #0277ec);
+    box-shadow: inset 0 1px 0 rgb(255, 255, 255 / 30%), 0 1px 0 rgb(0, 0, 0 / 55%); 
+}
+
+.btn{
+    position: relative;
+    margin: 0.5em 0.5em 0.5em 0;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1em;
+    vertical-align: middle;
+    font-weight: 400;
+    letter-spacing: .1px;
+    border-radius: 2px;
+    user-select: none;
+    text-align: center;
+    box-sizing: border-box;
+    border: 0;
+}
+
+@media (min-width: 739px){
+    .terms-of-use{
+        color: #999;
+        margin-bottom: 25px;
+        position: relative;
+        text-align: left;
+    }
+}
+
+.terms-of-use .terms-of-use--link-button{
+    color: inherit;
+    text-decoration: underline;
+}
+
+.terms-of-use--link-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+}
+
+.terms-of-use--link-button-hidden{
+    visibility: hidden;
+}
+
+.terms-of-use-disclosure{
+    visibility: hidden;
+    opacity: 0;
+    transition: height .5s ease;
+}
+
+.terms-of-use-disclosure-visible{
+    visibility: visible;
+    opacity: 1;
+    transition: height .5s ease;
+}
+
+.privacy-link, 
+.terms-link{
+    color: #999;
+    text-decoration: underline;
+}
+
+/* loginhelp bottom */
+.login-footer-wrapper{
+    margin-top: 0;
+    background: rgba(0,0,0,.75);
+    max-height: 300px;
+    min-width: 190px;
+    width: 100%;
+    height: 300px;
+    padding-bottom: 20px;
+    font-size: 1em;
+    color: #757575;
+    position: relative;
+  }
+  
+      .login-site-footer{
+        color: #757575;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px 0;
+      }
+  
+        .login-footer-top{
+          color: #757575;
+          padding: 0;
+          margin: 0 0 30px;
+        }
+  
+        ul.structural{
+          padding: 0;
+          margin: 0;
+        }
+  
+        .login-footer-links{
+          max-width: 1000px;
+          font-size: 13px;
+          box-sizing: border-box;
+        }
+  
+        ul.structural>li{
+          list-style: none;
+          margin-left: 0;
+        }
+  
+          .login-footer-link-item{
+            box-sizing: border-box;
+            padding: 0;
+            margin-bottom: 16px;
+            display: inline-block;
+            min-width: 100px;
+            width: 25%;
+            padding-right: 12px;
+            vertical-align: top;
+          }
+  
+          ul>li{
+            margin-left: 1.1em;
+            margin-bottom: 5px;
+            list-style-type: disc;
+          }
+  
+          li{
+            display: list-item;
+            text-align: -webkit-match-parent;
+          }
+  
+            .login-footer-link{
+              color: #757575;
+            }
+  
+            .login a:hover{
+              text-decoration: underline;
+            }
+
+            .login-footer-wrapper a:hover{
+                text-decoration: underline;
+            } 
+
+@media (max-width: 739px){
+    body, html{
+        background-color: #f3f3f3;
+        color: #333;
+    }
+
+    .loginhelp.login-body{
+        color: #333;
+        margin: 0 auto;
+        padding: 0 5%;
+    }
+
+    @media (min-width: 500px){
+        .login-content{
+            min-width: 380px;
+            background-color: #f3f3f3;
+            padding-top: 20px;
+        }
+    }
+
+    .login-content{
+        padding-top: 20px;
+    }
+
+    .terms-of-use{
+        color: #999;
+        margin-bottom: 25px;
+    }
+}
