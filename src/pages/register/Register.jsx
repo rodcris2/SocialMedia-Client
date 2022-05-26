@@ -9,7 +9,7 @@ export const Register = () => {
   const[password, setPassword] = useState("");
 
   const register = () => {      
-    axios.post("http://localhost:5000/user/register", {email, password}).then((response) => {
+    axios.post("https://social-media1-api.herokuapp.com/user/register", {email, password}).then((response) => {
       setMessage(response.data.msg);
     }).catch((error) => {
       setMessage(error.response.data.msg)

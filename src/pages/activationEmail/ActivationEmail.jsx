@@ -9,7 +9,7 @@ export const ActivationEmail = () => {
     const [success, setSuccess] = useState("");
 
     const activationEmail = async () => {
-        await axios.post("http://localhost:5000/user/activation", {activation_token}).then((response) => {
+        await axios.post("https://social-media1-api.herokuapp.com/user/activation", {activation_token}).then((response) => {
             setSuccess('Account has been activated! You may now login in.');
         }).catch((error) => {
             if(error.response.data.msg === 'jwt expired') {

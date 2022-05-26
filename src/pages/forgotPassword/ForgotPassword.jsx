@@ -8,7 +8,7 @@ export const ForgotPassword = () => {
   const[email, setEmail] = useState("");
 
   const login = () => {      
-      axios.post("http://localhost:5000/user/forgot", {email}).then((response) => {
+      axios.post("https://social-media1-api.herokuapp.com/user/forgot", {email}).then((response) => {
           setError("");
           console.log(response);
       }).catch((error) => {

@@ -8,7 +8,7 @@ function timeout(ms){
 export const createPost = async (postInfo, dispatch, posts) => {
     dispatch({ type: "ADD_POST_START" });
     try {
-        const res = await axios.post("http://localhost:5000/post/create", postInfo, {
+        const res = await axios.post("https://social-media1-api.herokuapp.com/post/create", postInfo, {
             headers: {
                 Authorization: getAccessToken()
             },
@@ -29,7 +29,7 @@ export const createPost = async (postInfo, dispatch, posts) => {
 export const editPost = async (id, postInfo, dispatch, posts) => {
     dispatch({ type: "EDIT_POST_START" });
     try {
-        const res = await axios.put("http://localhost:5000/post/edit/" + id , postInfo, {
+        const res = await axios.put("https://social-media1-api.herokuapp.com/post/edit/" + id , postInfo, {
             headers: {
                 Authorization: getAccessToken()
             },
@@ -50,7 +50,7 @@ export const editPost = async (id, postInfo, dispatch, posts) => {
 export const deletePost = async (id, dispatch, posts) => {
     dispatch({ type: "DELETE_POST_START" });
     try {
-        const res = await axios.delete("http://localhost:5000/post/delete/" + id , {
+        const res = await axios.delete("https://social-media1-api.herokuapp.com/post/delete/" + id , {
             headers: {
                 Authorization: getAccessToken()
             },
@@ -71,7 +71,7 @@ export const deletePost = async (id, dispatch, posts) => {
 export const allPosts = async (dispatch) => {
     dispatch({ type: "POSTS_START" });
     try {
-        const res = await axios.get("http://localhost:5000/post/all.info", {
+        const res = await axios.get("https://social-media1-api.herokuapp.com/post/all.info", {
             headers: {
                 Authorization: getAccessToken()
             },

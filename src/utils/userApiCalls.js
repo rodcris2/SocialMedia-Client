@@ -4,7 +4,7 @@ import { getAccessToken, setAccessToken } from "./accessToken";
 export const login = async (userCredential, dispatch) => {
     dispatch({ type: "LOGIN_START" });
     try {
-        const res = await axios.post("http://localhost:5000/user/login", userCredential, {
+        const res = await axios.post("https://social-media1-api.herokuapp.com/user/login", userCredential, {
             withCredentials: true
         });
         if(res && res.data) {
@@ -18,7 +18,7 @@ export const login = async (userCredential, dispatch) => {
 
 export const userLoggedIn = async (token, dispatch) => {
     try {
-        await axios.get("http://localhost:5000/user/checkUser", {
+        await axios.get("https://social-media1-api.herokuapp.com/user/checkUser", {
             headers: {
                 Authorization: token
             },
@@ -33,7 +33,7 @@ export const userLoggedIn = async (token, dispatch) => {
 export const profile = async (dispatch) => {
     dispatch({ type: "USER_START" });
     try {
-        const res = await axios.get("http://localhost:5000/user/info", {
+        const res = await axios.get("https://social-media1-api.herokuapp.com/user/info", {
             headers: {
                 Authorization: getAccessToken()
             },

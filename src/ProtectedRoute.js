@@ -10,7 +10,7 @@ const ProtectedRoute = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch("http://localhost:5000/user/refresh_token", {
+        fetch("https://social-media1-api.herokuapp.com/user/refresh_token", {
             method: 'POST',
             credentials: "include"
         }).then(async x => {
