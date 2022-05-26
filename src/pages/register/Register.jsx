@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-import { PublicTopbar } from '../../components/publicTopbar/PublicTopbar';
+import PublicTopbar from '../../components/publicTopbar/PublicTopbar';
 
 export const Register = () => {
   const[message, setMessage] = useState("");

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { Sidebar } from '../../components/sidebar/Sidebar';
-import { Topbar } from '../../components/topbar/Topbar';
-import { UserProfileInfo } from '../../components/userProfileInfo/UserProfileInfo';
+import Sidebar from '../../components/sidebar/Sidebar';
+import Topbar from '../../components/topbar/Topbar';
+import UserProfileInfo from '../../components/userProfileInfo/UserProfileInfo';
 import { UserContext } from '../../context/userInfo/UserContext';
 
 export const Profile = () => {
